@@ -28,13 +28,32 @@
 	margin-right : 100px;
 }
 
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+}
+
+.flex-container > div {
+  	background-color: transparent;
+  	width: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: center;
+  	line-height: 75px;
+  	font-size: 20px;
+}
 /*judul*/
+.navbar {
+	font-family : Work Sans;
+	font-size : 20px;
+	}
 .logo{
 	font-size: 60px;
 	text-align: center;
-    color : #30364D;
-    font-weight : 600;
-    font-family : Work Sans;
+	color : #30364D;
+    	font-weight : 600;
+    	font-family : Work Sans;
 }
 
 .judul{
@@ -148,6 +167,12 @@
 </head>
 <body>
 <div class = "background">
+	<div class="flex-container">
+  		<div class = "navbar">Anamnesa.id</div>
+  		<div>Home</div>
+  		<div>Skrining depresi</div>  
+  		<div>About</div>
+	</div>
 	<h1 class = "logo">Anamnesa.id</h1>
     <h1 class = "judul">
 		Cek gejala penyakit yang kamu alami dan dapatkan rekomendasi pengobatan yang tepat dari gejalamu!
