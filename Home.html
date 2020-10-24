@@ -28,6 +28,7 @@
 <style>
 	body {font-family : Fira Sans; font-weight : 600px;
 	}
+	* {box-sizing : border-box;}
 .background{
 	height : auto;
 	background-color: #f1f8fd;
@@ -50,6 +51,15 @@
   	flex-wrap: nowrap;
 	
 }
+
+@media only screen and (max-width: 768px) {
+.container {
+	margin-top : 120px;
+	}
+.sectioncontainer2 {
+	display: none;
+  }
+	}
 
 .container {
 	margin-top : 120px;
@@ -192,7 +202,7 @@
   		<div class ="navbar2">About</div>
 	</div>
 	<div class = "container">
-    	<div>
+    	<div class = "sectioncontainer1">
 		<h1 class = "judul">
 		Cek gejala penyakit yang kamu alami dan dapatkan rekomendasi pengobatan yang tepat dari gejalamu!
 		</h1>
@@ -201,7 +211,7 @@
 		</h2>
 		<button class ="button">Cek Gejala</button>
 	</div>
-	<div>
+	<div class ="sectioncontainer2">
 		<img src ="output-onlinepngtools (3).png" class="image"></img>
 	</div>
 	</div>
