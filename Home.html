@@ -181,15 +181,17 @@
 .group { zoom:1; /* For IE 6/7 */ }
 
 /*  GRID OF THREE  */
-.sec_3_of_3 { width: 100%; }
-.sec_2_of_3 { width: 65.33%; }
-.sec_1_of_3 { width: 30.66%; }
+.container2_3_of_3 { width: 100%; }
+.container2_2_of_3 { width: 65.33%; }
+.container2_1_of_3 { width: 30.66%; }
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
+/*  GO FULL WIDTH BELOW 720 PIXELS */
 @media only screen and (max-width: 720px) {
 	.col {  margin: 1% 0 1% 0%; }
-	.sec_3_of_3, .sec_2_of_3, .sec_1_of_3 { width: 100%; }
-}
+	.container2_3_of_3, .container2_2_of_3, .container2_1_of_3 { width: 100%; }
+	.button2 {width: 50%}
+	.sectioncontainer2 {display:none:}
+	}
 
 
 
@@ -237,17 +239,17 @@
 	Bagaimana Anamnesa bekerja?
 	</h1>
 <div class = "container2 group">
-    		<div class = "col sec_1_of_3">
+    		<div class = "col container2_1_of_3">
 			<h2 class ="nomer">Melakukan deteksi dini penyakit dengan cepat</h2>
 			<img src ="output-onlinepngtools.png" class="image"></img>
 			<h4 class ="isi2"> Apakah kamu mengalami gejala yang tidak normal? Coba isi skrining gejala terlebih dahulu sebagai bentuk deteksi dini penyakit yang mungkin kamu alami.</h2>
 		</div>
-		<div class = "col sec_1_of_3">
+		<div class = "col container2_1_of_3">
 			<h2 class ="nomer">Menentukan kemungkinan penyakit yang kamu alami</h2>
 			<img src ="output-onlinepngtools (1).png" class="image"></img>
 			<h4 class ="isi2"> Setelah mengisi skrining gejala, kami akan memberikan hasil berupa kemungkinan penyakit yang mungkin kamu alami.</h4>
 		</div>
-		<div class = "col sec_1_of_3">
+		<div class = "col container2_1_of_3">
 			<h2 class ="nomer">Memberikan rekomendasi manajemen yang tepat</h2>
 			<img src ="output-onlinepngtools (2).png" class="image"></img>
 			<h4 class ="isi2"> Berdasarkan kemungkinan penyakit yang muncul, lami akan memberikan hasil rekomendasi apakah kamu perlu berobat atau tidak, kondisimu darurat atau tidak dan menentukan kemanakah kamu akan berobat.</h4>
