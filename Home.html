@@ -52,21 +52,6 @@
 	
 }
 
-@media (max-width: 768px) {
-.container {
-	margin-top : 120px;
-	}
-.sectioncontainer2 {
-	display: none;
-  }
-.container2 {
-	margin-top : 50px;
-	display : grid;
-	grid-template-columns: auto;
-	}
-	}
-
-
 .container {
 	margin-top : 120px;
 	display : grid;
@@ -176,12 +161,37 @@
    
 
 .container2{
-	display : grid;
-	grid-template-columns: 33% 33% 33%;
-  	grid-gap: 50px;
-    margin-top : 50px;
- 
+	clear: both;
+	padding: 0px;
+	margin: 0px;
 }
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 4%;
+}
+.col:first-child { margin-left: 0; }
+	
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.sec_3_of_3 { width: 100%; }
+.sec_2_of_3 { width: 65.33%; }
+.sec_1_of_3 { width: 30.66%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 720px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+
 
 .nomer{
 	font-size : 20px;
@@ -226,18 +236,18 @@
 	<h1 class = "judul2">
 	Bagaimana Anamnesa bekerja?
 	</h1>
-<div class = "container2">
-    		<div>
+<div class = "container2 group">
+    		<div class = "col sec_1_of_3">
 			<h2 class ="nomer">Melakukan deteksi dini penyakit dengan cepat</h2>
 			<img src ="output-onlinepngtools.png" class="image"></img>
 			<h4 class ="isi2"> Apakah kamu mengalami gejala yang tidak normal? Coba isi skrining gejala terlebih dahulu sebagai bentuk deteksi dini penyakit yang mungkin kamu alami.</h2>
 		</div>
-		<div>
+		<div class = "col sec_1_of_3">
 			<h2 class ="nomer">Menentukan kemungkinan penyakit yang kamu alami</h2>
 			<img src ="output-onlinepngtools (1).png" class="image"></img>
 			<h4 class ="isi2"> Setelah mengisi skrining gejala, kami akan memberikan hasil berupa kemungkinan penyakit yang mungkin kamu alami.</h4>
 		</div>
-		<div>
+		<div class = "col sec_1_of_3">
 			<h2 class ="nomer">Memberikan rekomendasi manajemen yang tepat</h2>
 			<img src ="output-onlinepngtools (2).png" class="image"></img>
 			<h4 class ="isi2"> Berdasarkan kemungkinan penyakit yang muncul, lami akan memberikan hasil rekomendasi apakah kamu perlu berobat atau tidak, kondisimu darurat atau tidak dan menentukan kemanakah kamu akan berobat.</h4>
